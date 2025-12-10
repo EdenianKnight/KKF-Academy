@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKF Academy - Academic & Tech Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600">KKF Academy</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-900 font-semibold border-b-2 border-indigo-600">Home</a>
+                    <a href="academic.html" class="text-gray-600 hover:text-gray-900 transition">Academic Tutoring</a>
+                    <a href="tech.html" class="text-gray-600 hover:text-gray-900 transition">Tech Academy</a>
+                    <a href="https://wa.me/2348000000000" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">Book a Session</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-900 font-semibold">Home</a>
+                <a href="academic.html" class="block py-2 text-gray-600 hover:text-gray-900">Academic Tutoring</a>
+                <a href="tech.html" class="block py-2 text-gray-600 hover:text-gray-900">Tech Academy</a>
+                <a href="https://wa.me/2348000000000" class="block mt-2 bg-green-500 text-white px-6 py-2 rounded-full text-center hover:bg-green-600">Book a Session</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Split Screen -->
+    <section class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Choose Your Path to Excellence</h1>
+                <p class="text-xl text-gray-600">Academic Success or Tech Mastery - We've Got You Covered</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Academic Wing Card -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="p-8 md:p-12 text-center">
+                        <div class="inline-block p-6 bg-blue-600 rounded-full mb-6">
+                            <i class="fas fa-graduation-cap text-5xl text-white"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-blue-900 mb-4">Academic Excellence</h2>
+                        <p class="text-lg text-blue-800 mb-6">Master Mathematics, Sciences, and ace your exams including WAEC, JAMB, and IGCSE</p>
+                        <ul class="text-left mb-8 space-y-2 text-blue-800">
+                            <li><i class="fas fa-check-circle text-blue-600 mr-2"></i>Expert WAEC/JAMB Preparation</li>
+                            <li><i class="fas fa-check-circle text-blue-600 mr-2"></i>Mathematics & Sciences Mastery</li>
+                            <li><i class="fas fa-check-circle text-blue-600 mr-2"></i>IGCSE/Cambridge Support</li>
+                        </ul>
+                        <a href="academic.html" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-lg">
+                            Visit Academic Wing <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tech Wing Card -->
+                <div class="bg-gradient-to-br from-purple-900 to-gray-900 rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <div class="p-8 md:p-12 text-center">
+                        <div class="inline-block p-6 bg-purple-600 rounded-full mb-6">
+                            <i class="fas fa-code text-5xl text-white"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-purple-300 mb-4">Future Tech Skills</h2>
+                        <p class="text-lg text-gray-300 mb-6">Build real websites and apps. Web development and software engineering for kids aged 8+</p>
+                        <ul class="text-left mb-8 space-y-2 text-gray-300">
+                            <li><i class="fas fa-check-circle text-green-400 mr-2"></i>HTML, CSS & JavaScript</li>
+                            <li><i class="fas fa-check-circle text-green-400 mr-2"></i>Real Project Portfolio</li>
+                            <li><i class="fas fa-check-circle text-green-400 mr-2"></i>Ages 8+ Welcome</li>
+                        </ul>
+                        <a href="tech.html" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-purple-700 transition text-lg">
+                            Visit Tech Wing <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power Combo Section -->
+    <section class="py-16 px-4 bg-gradient-to-r from-indigo-600 to-purple-600">
+        <div class="max-w-5xl mx-auto text-center text-white">
+            <div class="inline-block p-4 bg-yellow-400 rounded-full mb-6">
+                <i class="fas fa-star text-4xl text-indigo-900"></i>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">The Complete Scholar Package</h2>
+            <p class="text-xl md:text-2xl mb-8 leading-relaxed">Equip your child with A1 grades AND real-world coding skills. Get a special discount when you bundle Mathematics or Physics with Web Development courses.</p>
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                    <i class="fas fa-calculator text-4xl mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">Academic Foundation</h3>
+                    <p>Excel in core subjects</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                    <i class="fas fa-plus text-4xl mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">Combined</h3>
+                    <p>Best value package</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-xl p-6">
+                    <i class="fas fa-laptop-code text-4xl mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">Tech Skills</h3>
+                    <p>Build real projects</p>
+                </div>
+            </div>
+            <a href="https://wa.me/2348000000000?text=I'm interested in the Complete Scholar Package" class="inline-block bg-yellow-400 text-indigo-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 transition transform hover:scale-105">
+                <i class="fas fa-gift mr-2"></i> Get Bundle Discount
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-400">Excellence Tutoring</h3>
+                    <p class="text-gray-400">Empowering Nigerian students with academic excellence and future-ready tech skills.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="academic.html" class="text-gray-400 hover:text-white transition">Academic Tutoring</a></li>
+                        <li><a href="tech.html" class="text-gray-400 hover:text-white transition">Tech Academy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +234 800 000 0000</p>
+                    <p class="text-gray-400 mb-4"><i class="fas fa-envelope mr-2"></i> hello@excellencetutoring.ng</p>
+                    <a href="https://wa.me/2348000000000" class="inline-block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
+                        <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Excellence Tutoring Nigeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

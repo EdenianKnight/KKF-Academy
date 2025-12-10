@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Tutoring - Excellence Tutoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600">Excellence Tutoring</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900 transition">Home</a>
+                    <a href="academic.html" class="text-gray-900 font-semibold border-b-2 border-blue-600">Academic Tutoring</a>
+                    <a href="tech.html" class="text-gray-600 hover:text-gray-900 transition">Tech Academy</a>
+                    <a href="https://wa.me/2348000000000" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">Book a Session</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-gray-900">Home</a>
+                <a href="academic.html" class="block py-2 text-gray-900 font-semibold">Academic Tutoring</a>
+                <a href="tech.html" class="block py-2 text-gray-600 hover:text-gray-900">Tech Academy</a>
+                <a href="https://wa.me/2348000000000" class="block mt-2 bg-green-500 text-white px-6 py-2 rounded-full text-center hover:bg-green-600">Book a Session</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-700 to-blue-900 text-white py-24 px-4">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200" alt="Students studying" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Expert Tutoring for Junior & Senior Secondary School</h1>
+            <p class="text-xl md:text-2xl mb-8">Build strong foundations, achieve A1 grades, and excel in your examinations</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full">
+                    <i class="fas fa-check-circle mr-2"></i> WAEC/WASSCE
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full">
+                    <i class="fas fa-check-circle mr-2"></i> JAMB/UTME
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full">
+                    <i class="fas fa-check-circle mr-2"></i> IGCSE/Cambridge
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Tutor Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <img src="images/bunmi03.jpeg" alt="Tutor Profile" class="w-64 h-64 rounded-full mx-auto md:mx-0 object-cover shadow-2xl border-8 border-green-100">
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Meet Your Tutor</h2>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">With years of experience in secondary school education, I specialize in transforming students' understanding of core academic subjects. My approach focuses on building strong foundations and developing critical thinking skills that last a lifetime.</p>
+                    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Subject Specializations:</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-calculator text-blue-600 mr-3 text-xl"></i>
+                            <span>Mathematics</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-flask text-blue-600 mr-3 text-xl"></i>
+                            <span>Chemistry</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-book text-blue-600 mr-3 text-xl"></i>
+                            <span>English Language</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-atom text-blue-600 mr-3 text-xl"></i>
+                            <span>Physics</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-square-root-alt text-blue-600 mr-3 text-xl"></i>
+                            <span>Further Mathematics</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-microscope text-blue-600 mr-3 text-xl"></i>
+                            <span>Basic Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Exams Section -->
+    <section class="py-16 px-4 bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Examination Preparation</h2>
+            <p class="text-xl text-center text-gray-600 mb-12">Comprehensive preparation for all major examinations</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- JSCE Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition transform hover:scale-105">
+                    <div class="text-center">
+                        <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+                            <i class="fas fa-school text-4xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">JSCE</h3>
+                        <p class="text-gray-600 mb-4">Junior School Certificate Examination preparation with focus on fundamentals</p>
+                        <ul class="text-left text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Core subjects mastery</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Strong foundations</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Exam techniques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- WAEC Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition transform hover:scale-105">
+                    <div class="text-center">
+                        <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+                            <i class="fas fa-certificate text-4xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">WAEC/WASSCE</h3>
+                        <p class="text-gray-600 mb-4">West African Examinations Council preparation for excellent results</p>
+                        <ul class="text-left text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Past questions practice</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Marking scheme analysis</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>A1 strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- JAMB Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition transform hover:scale-105">
+                    <div class="text-center">
+                        <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+                            <i class="fas fa-university text-4xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">JAMB/UTME</h3>
+                        <p class="text-gray-600 mb-4">University entrance exam preparation for top scores</p>
+                        <ul class="text-left text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>CBT practice sessions</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Time management</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Score optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IGCSE Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition transform hover:scale-105">
+                    <div class="text-center">
+                        <div class="inline-block p-4 bg-blue-100 rounded-full mb-4">
+                            <i class="fas fa-globe text-4xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Cambridge/IGCSE</h3>
+                        <p class="text-gray-600 mb-4">International curriculum support for Cambridge examinations</p>
+                        <ul class="text-left text-sm text-gray-700 space-y-2">
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>Cambridge syllabus aligned</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>International standards</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i>A*/A grade focus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">My Teaching Approach</h2>
+            <p class="text-xl text-center text-gray-600 mb-12">Proven methods for academic excellence</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="inline-block p-6 bg-blue-100 rounded-full mb-6">
+                        <i class="fas fa-hand-holding-heart text-5xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Patient & Supportive</h3>
+                    <p class="text-gray-700">I create a comfortable learning environment where students feel free to ask questions and make mistakes as part of the learning process.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="inline-block p-6 bg-blue-100 rounded-full mb-6">
+                        <i class="fas fa-seedling text-5xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Foundation-Focused</h3>
+                    <p class="text-gray-700">I ensure students understand core concepts thoroughly before moving forward, building solid foundations that support advanced learning.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="inline-block p-6 bg-blue-100 rounded-full mb-6">
+                        <i class="fas fa-clipboard-check text-5xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Exam-Ready Drills</h3>
+                    <p class="text-gray-700">Regular practice with past questions, timed exercises, and exam techniques to ensure students are fully prepared for test day.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-blue-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">What Parents Say</h3>
+                <div class="text-center text-gray-700 text-lg italic">
+                    <i class="fas fa-quote-left text-blue-400 text-3xl mb-4"></i>
+                    <p class="mb-4">"My daughter went from struggling with Mathematics to scoring A1 in WAEC. The patient teaching style and clear explanations made all the difference!"</p>
+                    <p class="font-semibold text-blue-800">- Mrs. Adebayo, Parent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to Excel in Your Exams?</h2>
+            <p class="text-xl mb-8">Book a free consultation session and let's discuss your child's academic goals</p>
+            <a href="https://wa.me/2348000000000?text=I'm interested in academic tutoring" class="inline-block bg-green-500 text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-green-600 transition transform hover:scale-105 shadow-2xl">
+                <i class="fab fa-whatsapp mr-3 text-2xl"></i> Chat on WhatsApp
+            </a>
+            <p class="mt-6 text-blue-100">Or call us at +234 800 000 0000</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-400">Excellence Tutoring</h3>
+                    <p class="text-gray-400">Empowering Nigerian students with academic excellence and future-ready tech skills.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="academic.html" class="text-gray-400 hover:text-white transition">Academic Tutoring</a></li>
+                        <li><a href="tech.html" class="text-gray-400 hover:text-white transition">Tech Academy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +234 800 000 0000</p>
+                    <p class="text-gray-400 mb-4"><i class="fas fa-envelope mr-2"></i> hello@excellencetutoring.ng</p>
+                    <a href="https://wa.me/2348000000000" class="inline-block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
+                        <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Excellence Tutoring Nigeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

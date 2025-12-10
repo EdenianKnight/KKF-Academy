@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Academy - Excellence Tutoring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        .code-bg {
+            background-color: #0a0a0a;
+            background-image: 
+                linear-gradient(rgba(138, 43, 226, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(138, 43, 226, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-black shadow-lg sticky top-0 z-50 border-b border-purple-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-purple-400">KKF Academy</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+                    <a href="academic.html" class="text-gray-300 hover:text-white transition">Academic Tutoring</a>
+                    <a href="tech.html" class="text-white font-semibold border-b-2 border-purple-500">Tech Academy</a>
+                    <a href="https://wa.me/2348000000000" class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">Book a Session</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-300 hover:text-white">Home</a>
+                <a href="academic.html" class="block py-2 text-gray-300 hover:text-white">Academic Tutoring</a>
+                <a href="tech.html" class="block py-2 text-white font-semibold">Tech Academy</a>
+                <a href="https://wa.me/2348000000000" class="block mt-2 bg-green-500 text-white px-6 py-2 rounded-full text-center hover:bg-green-600">Book a Session</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative code-bg py-24 px-4 overflow-hidden">
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-10 left-10 text-green-400 text-sm font-mono">console.log("Hello World!");</div>
+            <div class="absolute top-32 right-20 text-purple-400 text-sm font-mono">&lt;div className="amazing"&gt;</div>
+            <div class="absolute bottom-20 left-32 text-cyan-400 text-sm font-mono">function buildFuture() {</div>
+            <div class="absolute bottom-40 right-10 text-pink-400 text-sm font-mono">const skills = ["HTML", "CSS", "JS"];</div>
+        </div>
+        
+        <div class="relative max-w-6xl mx-auto text-center">
+            <div class="inline-block mb-6 float-animation">
+                <div class="p-6 bg-purple-600 rounded-2xl shadow-2xl">
+                    <i class="fas fa-laptop-code text-6xl"></i>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Don't Just Play Games.<br/>Build Them.
+            </h1>
+            <p class="text-2xl md:text-3xl mb-8 text-gray-300">Web Development & Software Engineering for Young Innovators</p>
+            <div class="flex flex-wrap justify-center gap-4 text-lg">
+                <div class="bg-purple-900 bg-opacity-50 backdrop-blur-sm px-6 py-3 rounded-full border border-purple-500">
+                    <i class="fas fa-code mr-2 text-green-400"></i> Ages 8+
+                </div>
+                <div class="bg-purple-900 bg-opacity-50 backdrop-blur-sm px-6 py-3 rounded-full border border-purple-500">
+                    <i class="fas fa-laptop mr-2 text-cyan-400"></i> Build Real Projects
+                </div>
+                <div class="bg-purple-900 bg-opacity-50 backdrop-blur-sm px-6 py-3 rounded-full border border-purple-500">
+                    <i class="fas fa-rocket mr-2 text-pink-400"></i> Future-Ready Skills
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Instructor Section -->
+    <section class="py-16 px-4 bg-gradient-to-b from-gray-900 to-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left order-2 md:order-1">
+                    <h2 class="text-4xl font-bold text-purple-300 mb-6">Meet Your Instructor</h2>
+                    <p class="text-lg text-gray-300 mb-4 leading-relaxed">As a professional software developer and educator, I'm passionate about introducing young minds to the world of coding. I believe every child has the potential to become a creator, not just a consumer, of technology.</p>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">My teaching philosophy is simple: learning to code should be fun, practical, and empowering. Students don't just learn syntax—they build real projects they can show off to friends and family.</p>
+                    
+                    <div class="bg-purple-900 bg-opacity-30 border border-purple-700 rounded-xl p-6 mb-6">
+                        <h3 class="text-xl font-semibold text-purple-300 mb-4">Why Kids Love This Program:</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li><i class="fas fa-star text-yellow-400 mr-3"></i>See results immediately - build websites from day one</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-3"></i>Learn through game development and creative projects</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-3"></i>Portfolio of real projects to showcase</li>
+                            <li><i class="fas fa-star text-yellow-400 mr-3"></i>Skills that last a lifetime in our digital world</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center order-1 md:order-2">
+                    <div class="relative inline-block">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500" alt="Instructor Profile" class="w-72 h-72 rounded-2xl object-cover shadow-2xl border-4 border-purple-500">
+                        <div class="absolute -bottom-4 -right-4 bg-green-500 text-white px-6 py-3 rounded-full font-bold shadow-xl">
+                            <i class="fas fa-code mr-2"></i> Pro Developer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Roadmap Section -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-purple-300 mb-4">Learning Roadmap</h2>
+            <p class="text-xl text-center text-gray-400 mb-12">From beginner to junior software engineer</p>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-green-500 via-purple-500 to-pink-500"></div>
+                
+                <!-- Step 1 -->
+                <div class="relative mb-12 md:mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="w-full md:w-5/12 md:text-right md:pr-12 mb-6 md:mb-0">
+                            <div class="bg-gradient-to-br from-green-900 to-green-700 rounded-xl p-8 shadow-2xl border-2 border-green-500">
+                                <h3 class="text-3xl font-bold text-green-300 mb-4">
+                                    <i class="fas fa-flag-checkered mr-3"></i> Step 1: Hello World
+                                </h3>
+                                <p class="text-gray-200 text-lg mb-4">Introduction to Computational Thinking & Logic</p>
+                                <ul class="text-left space-y-2 text-gray-300">
+                                    <li><i class="fas fa-check-circle text-green-400 mr-2"></i>What is programming?</li>
+                                    <li><i class="fas fa-check-circle text-green-400 mr-2"></i>Problem-solving fundamentals</li>
+                                    <li><i class="fas fa-check-circle text-green-400 mr-2"></i>Setting up development environment</li>
+                                    <li><i class="fas fa-check-circle text-green-400 mr-2"></i>Your first program</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex w-2/12 justify-center">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-black font-bold text-xl shadow-lg">1</div>
+                        </div>
+                        <div class="w-full md:w-5/12"></div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative mb-12 md:mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="w-full md:w-5/12"></div>
+                        <div class="hidden md:flex w-2/12 justify-center">
+                            <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">2</div>
+                        </div>
+                        <div class="w-full md:w-5/12 md:pl-12">
+                            <div class="bg-gradient-to-br from-purple-900 to-purple-700 rounded-xl p-8 shadow-2xl border-2 border-purple-500">
+                                <h3 class="text-3xl font-bold text-purple-300 mb-4">
+                                    <i class="fas fa-paint-brush mr-3"></i> Step 2: Front-End Builder
+                                </h3>
+                                <p class="text-gray-200 text-lg mb-4">HTML, CSS & Responsive Design</p>
+                                <ul class="text-left space-y-2 text-gray-300">
+                                    <li><i class="fas fa-check-circle text-purple-400 mr-2"></i>Building website structure (HTML)</li>
+                                    <li><i class="fas fa-check-circle text-purple-400 mr-2"></i>Styling and design (CSS)</li>
+                                    <li><i class="fas fa-check-circle text-purple-400 mr-2"></i>Making sites mobile-friendly</li>
+                                    <li><i class="fas fa-check-circle text-purple-400 mr-2"></i>Create portfolio website</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="w-full md:w-5/12 md:text-right md:pr-12 mb-6 md:mb-0">
+                            <div class="bg-gradient-to-br from-pink-900 to-pink-700 rounded-xl p-8 shadow-2xl border-2 border-pink-500">
+                                <h3 class="text-3xl font-bold text-pink-300 mb-4">
+                                    <i class="fas fa-rocket mr-3"></i> Step 3: Junior Engineer
+                                </h3>
+                                <p class="text-gray-200 text-lg mb-4">JavaScript & Interactive Applications</p>
+                                <ul class="text-left space-y-2 text-gray-300">
+                                    <li><i class="fas fa-check-circle text-pink-400 mr-2"></i>Programming logic & algorithms</li>
+                                    <li><i class="fas fa-check-circle text-pink-400 mr-2"></i>Making websites interactive</li>
+                                    <li><i class="fas fa-check-circle text-pink-400 mr-2"></i>Building games and tools</li>
+                                    <li><i class="fas fa-check-circle text-pink-400 mr-2"></i>Final capstone project</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex w-2/12 justify-center">
+                            <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">3</div>
+                        </div>
+                        <div class="w-full md:w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Examples Section -->
+    <section class="py-16 px-4 bg-gradient-to-b from-gray-800 to-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-purple-300 mb-4">What Students Build</h2>
+            <p class="text-xl text-center text-gray-400 mb-12">Real projects, real results</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-purple-700 hover:border-purple-500 transition">
+                    <div class="bg-gradient-to-br from-blue-600 to-cyan-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-user-circle text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Personal Portfolio</h3>
+                        <p class="text-gray-400">A professional website showcasing their skills and projects</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-purple-700 hover:border-purple-500 transition">
+                    <div class="bg-gradient-to-br from-green-600 to-emerald-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-gamepad text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Interactive Games</h3>
+                        <p class="text-gray-400">Fun browser games using JavaScript logic and animations</p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl border border-purple-700 hover:border-purple-500 transition">
+                    <div class="bg-gradient-to-br from-purple-600 to-pink-600 h-40 flex items-center justify-center">
+                        <i class="fas fa-calculator text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Useful Web Apps</h3>
+                        <p class="text-gray-400">Calculators, to-do lists, and other practical tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="py-16 px-4 bg-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-gradient-to-r from-yellow-900 to-orange-900 rounded-2xl p-8 border-2 border-yellow-500 shadow-2xl">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 mr-6">
+                        <i class="fas fa-exclamation-triangle text-5xl text-yellow-400"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-yellow-300 mb-4">What You'll Need</h2>
+                        <div class="space-y-4 text-gray-200 text-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-laptop text-yellow-400 text-2xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Laptop Required</p>
+                                    <p class="text-gray-300 text-base">Any laptop with internet connection (Windows, Mac, or Linux)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-wifi text-yellow-400 text-2xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Stable Internet</p>
+                                    <p class="text-gray-300 text-base">For online sessions and accessing learning resources</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-heart text-yellow-400 text-2xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Curiosity & Creativity</p>
+                                    <p class="text-gray-300 text-base">A willingness to learn and experiment—that's all!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-gradient-to-r from-purple-900 via-pink-900 to-purple-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-8">
+                <i class="fas fa-rocket text-7xl text-purple-300 float-animation"></i>
+            </div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
+                Launch Your Child's Tech Journey
+            </h2>
+            <p class="text-2xl mb-8 text-gray-300">Turn screen time into skill time. Start building the future today.</p>
+            <a href="https://wa.me/2348000000000?text=I want to enroll my child in the Tech Academy" class="inline-block bg-green-500 text-white px-12 py-6 rounded-full text-2xl font-bold hover:bg-green-600 transition transform hover:scale-110 shadow-2xl">
+                <i class="fab fa-whatsapp mr-3 text-3xl"></i> Enroll Your Child
+            </a>
+            <p class="mt-8 text-gray-400 text-lg">Free trial session available • Ages 8+ • Laptop required</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-4 border-t border-purple-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Excellence Tutoring</h3>
+                    <p class="text-gray-400">Empowering Nigerian students with academic excellence and future-ready tech skills.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="academic.html" class="text-gray-400 hover:text-white transition">Academic Tutoring</a></li>
+                        <li><a href="tech.html" class="text-gray-400 hover:text-white transition">Tech Academy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +234 800 000 0000</p>
+                    <p class="text-gray-400 mb-4"><i class="fas fa-envelope mr-2"></i> hello@excellencetutoring.ng</p>
+                    <a href="https://wa.me/2348000000000" class="inline-block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
+                        <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Excellence Tutoring Nigeria. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
