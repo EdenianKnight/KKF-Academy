@@ -6,6 +6,12 @@
     <title>KKF Academy - Academic & Tech Education</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .slider-dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -42,15 +48,107 @@
         </div>
     </nav>
 
-    <!-- Hero Section - Split Screen -->
+    <!-- Hero Section - Image Slider -->
     <section class="py-16 px-4">
         <div class="max-w-7xl mx-auto">
-            <div class="max-w-7xl mx-auto bg-cover bg-center bg-no-repeat" style="background-image: url('your-image-url.jpg');">
-    <div class="text-center mb-12 bg-white/80 backdrop-blur-sm p-8 rounded-lg">
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Choose Your Path to Excellence</h1>
-        <p class="text-xl text-gray-600">Academic Success or Tech Mastery - We've Got You Covered</p>
-    </div>
-</div>
+            <!-- Image Slider Container -->
+            <div class="relative mb-12 rounded-2xl overflow-hidden shadow-2xl" style="height: 500px;">
+                <!-- Slide 1 -->
+                <div class="slider-slide active absolute inset-0 transition-opacity duration-1000">
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200');">
+                        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+                    </div>
+                    <div class="relative h-full flex items-center justify-center text-center px-4">
+                        <div class="max-w-4xl">
+                            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Choose Your Path to Excellence</h1>
+                            <p class="text-xl md:text-2xl text-gray-200">Academic Success or Tech Mastery - We've Got You Covered</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slider-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200');">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-700/70"></div>
+                    </div>
+                    <div class="relative h-full flex items-center justify-center text-center px-4">
+                        <div class="max-w-4xl">
+                            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Turn Struggle into Strength</h1>
+                            <p class="text-xl md:text-2xl text-blue-100 mb-8">Expert tutoring for WAEC, JAMB, & IGCSE. We build the foundation for University success.</p>
+                            <a href="pages/academic.html" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-lg">
+                                Explore Academics <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slider-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200');">
+                        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-gray-900/80"></div>
+                    </div>
+                    <div class="relative h-full flex items-center justify-center text-center px-4">
+                        <div class="max-w-4xl">
+                            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Code Your Own Future</h1>
+                            <p class="text-xl md:text-2xl text-purple-200 mb-8">Don't just play games—build them. Practical Web Development for ages 6+.</p>
+                            <a href="pages/tech.html" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-purple-700 transition text-lg">
+                                View Tech Curriculum <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slider-slide absolute inset-0 opacity-0 transition-opacity duration-1000">
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200');">
+                        <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/85 to-purple-900/85"></div>
+                    </div>
+                    <div class="relative h-full flex items-center justify-center px-4">
+                        <div class="max-w-5xl w-full">
+                            <h1 class="text-4xl md:text-5xl font-bold text-white mb-8 text-center">Expertise You Can Trust</h1>
+                            <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+                                <!-- Tutor 1 -->
+                                <div class="text-center bg-white/10 backdrop-blur-sm p-6 rounded-2xl">
+                                    <img src="images/bunmi03.jpeg" alt="Oluwabunmi" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-400 object-cover">
+                                    <h3 class="text-xl font-bold text-white mb-1">Oluwabunmi Ogunlana</h3>
+                                    <p class="text-blue-300 font-semibold mb-1">Academic Lead</p>
+                                    <p class="text-gray-300 text-sm">B.Sc Physics</p>
+                                </div>
+                                <!-- Tutor 2 -->
+                                <div class="text-center bg-white/10 backdrop-blur-sm p-6 rounded-2xl">
+                                    <img src="images/solomon04.jpeg" alt="Solomon" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-purple-400 object-cover">
+                                    <h3 class="text-xl font-bold text-white mb-1">Solomon Okomowho</h3>
+                                    <p class="text-purple-300 font-semibold mb-1">Tech Lead</p>
+                                    <p class="text-gray-300 text-sm">Software Engineer</p>
+                                </div>
+                            </div>
+                            <div class="text-center mt-8">
+                                <a href="pages/about.html" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-indigo-700 transition text-lg">
+                                    Read Full Profiles <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Button -->
+                <button class="slider-prev absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full transition backdrop-blur-sm z-10">
+                    <i class="fas fa-chevron-left text-xl"></i>
+                </button>
+
+                <!-- Next Button -->
+                <button class="slider-next absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full transition backdrop-blur-sm z-10">
+                    <i class="fas fa-chevron-right text-xl"></i>
+                </button>
+
+                <!-- Dot Indicators -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3 z-10">
+                    <button class="slider-dot active w-3 h-3 rounded-full bg-white transition"></button>
+                    <button class="slider-dot w-3 h-3 rounded-full bg-white/50 transition"></button>
+                    <button class="slider-dot w-3 h-3 rounded-full bg-white/50 transition"></button>
+                    <button class="slider-dot w-3 h-3 rounded-full bg-white/50 transition"></button>
+                </div>
+            </div>
 
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Academic Wing Card -->
@@ -159,12 +257,87 @@
     </footer>
 
     <script>
+        // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        // Image Slider Javascript
+        const slides = document.querySelectorAll('.slider-slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const prevBtn = document.querySelector('.slider-prev');
+        const nextBtn = document.querySelector('.slider-next');
+        let currentSlide = 0;
+        let autoPlayInterval;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[n].classList.add('active');
+            dots[n].classList.add('active');
+            
+            slides.forEach((slide, index) => {
+                if (index === n) {
+                    slide.style.opacity = '1';
+                    slide.style.zIndex = '1';
+                } else {
+                    slide.style.opacity = '0';
+                    slide.style.zIndex = '0';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(nextSlide, 6000);
+        }
+
+        function stopAutoPlay() {
+            clearInterval(autoPlayInterval);
+        }
+
+        // Event Listeners
+        nextBtn.addEventListener('click', () => {
+            stopAutoPlay();
+            nextSlide();
+            startAutoPlay();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            stopAutoPlay();
+            prevSlide();
+            startAutoPlay();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopAutoPlay();
+                currentSlide = index;
+                showSlide(currentSlide);
+                startAutoPlay();
+            });
+        });
+
+        // Start auto-play
+        startAutoPlay();
+
+        // Pause on hover
+        const sliderContainer = document.querySelector('.slider-slide').parentElement;
+        sliderContainer.addEventListener('mouseenter', stopAutoPlay);
+        sliderContainer.addEventListener('mouseleave', startAutoPlay);
     </script>
 </body>
 </html>
