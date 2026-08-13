@@ -6,7 +6,7 @@
     /* The track holds two identical sets of cards back-to-back so the
            loop can be seamless. Translating by -50% moves exactly one set's
            width, landing on a frame that's pixel-identical to the start. */
-    transform: translateX(-20%);
+    transform: translateX(-50%);
   }
 }
 
