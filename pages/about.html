@@ -579,16 +579,19 @@
     <script>
       // Auto-duplicate each testimonial marquee so the scroll loops
       // seamlessly. Only one set of review cards needs to live in the
-      // HTML — this clones it once, wraps the clone so it's invisible
-      // to screen readers, and appends it right after the original.
+      // HTML — this clones each card individually (no wrapper element,
+      // since display:contents wrappers miscalculate width in some
+      // browsers and were causing the visible gap) and marks every
+      // clone aria-hidden so screen readers only see the originals.
       // The CSS animation slides the track by -50%, which lands exactly
-      // on the start of the (identical) clone, so the reset is invisible.
+      // on the start of the (identical) clones, so the reset is invisible.
       document.querySelectorAll(".marquee-track").forEach((track) => {
-        const clone = document.createElement("div");
-        clone.className = "contents";
-        clone.setAttribute("aria-hidden", "true");
-        clone.innerHTML = track.innerHTML;
-        track.appendChild(clone);
+        const originalCards = Array.from(track.children);
+        originalCards.forEach((card) => {
+          const clone = card.cloneNode(true);
+          clone.setAttribute("aria-hidden", "true");
+          track.appendChild(clone);
+        });
       });
     </script>
   </body>
