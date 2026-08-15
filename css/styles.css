@@ -50,3 +50,72 @@
     animation: none;
   }
 }
+
+/* Article of the Week banner: a soft light sweep to draw the eye */
+@keyframes bannerShine {
+  0% {
+    transform: translateX(-120%) skewX(-20deg);
+  }
+  60%,
+  100% {
+    transform: translateX(220%) skewX(-20deg);
+  }
+}
+
+.banner-shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  animation: bannerShine 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .banner-shine::before {
+    animation: none;
+  }
+}
+
+/* Newspaper-clipping article cards */
+.clipping {
+  position: relative;
+  transform: rotate(var(--clip-rotate, -1deg));
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 3px,
+    rgba(0, 0, 0, 0.015) 3px,
+    rgba(0, 0, 0, 0.015) 4px
+  );
+}
+
+.clipping:hover {
+  transform: rotate(0deg) translateY(-4px);
+}
+
+.clipping::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px dashed rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clipping,
+  .clipping:hover {
+    transform: none;
+  }
+}
