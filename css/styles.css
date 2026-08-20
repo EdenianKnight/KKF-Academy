@@ -119,3 +119,53 @@
     transform: none;
   }
 }
+
+/* Featured article excerpt: collapsed by default, reveals in full on
+   hover or click/tap */
+.excerpt {
+  max-height: 4.6em; /* roughly 3 lines at this font size */
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.excerpt-wrap {
+  position: relative;
+}
+
+.excerpt-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.6em;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.group:hover .excerpt,
+.excerpt.expanded {
+  max-height: 20em;
+}
+
+.group:hover .excerpt-fade,
+.excerpt.expanded ~ .excerpt-fade,
+.excerpt-wrap:has(.excerpt.expanded) .excerpt-fade {
+  opacity: 0;
+}
+
+#featured-toggle-hint {
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.group:hover #featured-toggle-hint,
+#featured-toggle-hint.hidden-hint {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .excerpt {
+    transition: none;
+  }
+}
